@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<body>
+
+    <div class="search">
+        <input type="text" id="search" placeholder="Search City">
+        <button id="searchBtn" onclick="searchWeather()">Search</button>
+    </div>
+
+    <div class="container">
+        <div class="city-info">
+            <div class="city"><span id="city"></span>, <span id="country"></span></div>
+        </div>
+
+        <div class="temp">
+            <div class="temp-element cur-temp"><span id="cur-temp"></span><sup>o</sup>C</div>
+            <div class="temp-element m-temp">
+                Max: <span id="max-temp"></span> <sup>o</sup>C<br>
+                Min: <span id="min-temp"></span> <sup>o</sup>C
+            </div>
+        </div>
+
+        <div class="air-quality">
+            <div class="humdity">Humidty<br><span class="humi-value"><span id="humidity"></span> %</span></div>
+            <div class="humdity">Pressure<br><span class="humi-value"><span id="pressure"></span> hPa</span></div>
+        </div>
+
+        <div class="weather">
+            Weather<br>
+            <span id="weather"></span>
+        </div>
+
+        <div class="sunrise-set">
+            <div class="sunrise">Sunrise<br><span id="sunrise"></span> (IST)</div>
+            <div class="sunset">Sunset<br><span id="sunset"></span> (IST)</div>
+        </div>
+
+        <div class="wind">
+            <div class="wind-title">Wind</div>
+            <div class="wind-data">
+                <div class="wind-data-element">Direction<br><span id="direction"></span> <sup>o</sup></div>
+                <div class="wind-data-element">Speed<br><span id="speed"></span> m/s</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
